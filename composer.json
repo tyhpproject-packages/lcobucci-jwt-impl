@@ -1,0 +1,45 @@
+{
+    "name": "tyhpdef/lcobucci-jwt-impl",
+    "description": "Implementation package for tyhpdef/lcobucci-jwt. Require tyhpdef/lcobucci-jwt, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "5.6.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/psr-clock": "@dev",
+                "tyhpdef/lcobucci-clock": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/lcobucci-jwt"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "lcobucci/jwt": "5.6.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/psr-clock": "@dev",
+        "tyhpdef/lcobucci-clock": "@dev"
+    }
+}
